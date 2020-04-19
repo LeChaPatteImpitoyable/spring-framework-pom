@@ -43,7 +43,7 @@
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-beans</artifactId>
+      <artifactId>spring-core</artifactId>
       <version>5.1.15.BUILD-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
@@ -51,6 +51,20 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>5.1.15.BUILD-SNAPSHOT</version>
+      <type>test-jar</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>5.1.15.BUILD-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>5.1.15.BUILD-SNAPSHOT</version>
+      <type>test-jar</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -87,6 +101,56 @@
       <version>5.1.15.BUILD-SNAPSHOT</version>
       <scope>compile</scope>
       <optional>true</optional>
+    </dependency>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.13</version>
+          <scope>test</scope>
+      </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>3.1.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>activemq-broker</artifactId>
+      <version>5.14.5</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.xmlunit</groupId>
+      <artifactId>xmlunit-core</artifactId>
+      <version>2.6.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.xmlunit</groupId>
+      <artifactId>xmlunit-matchers</artifactId>
+      <version>2.6.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <version>2.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-cglib-repack</artifactId>
+      <version>3.2.11</version>
+      <!--      <scope>system</scope>-->
+      <!--      <systemPath>${project.basedir}/lib/spring-cglib-repack-3.2.11.jar</systemPath>-->
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-objenesis-repack</artifactId>
+      <version>3.0.1</version>
+      <!--      <scope>system</scope>-->
+      <!--      <systemPath>${project.basedir}/lib/spring-objenesis-repack-3.0.1.jar</systemPath>-->
     </dependency>
   </dependencies>
 
