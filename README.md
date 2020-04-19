@@ -1,5 +1,6 @@
 #Spring Framework Pom
-@(标签)[Spring|Spring framework|Maven]
+
+[Spring|Spring framework|Maven]
 >**注意：** `此代码仅用于学习目的，便于新手阅读Spring Framework源码使用`
 >
 [TOC]
@@ -26,8 +27,8 @@
 ### **⑤人工移动**
 >I、将编译成功后每个项目中的build/poms/pom-default.xml移动到项目中，然后删除*.gradle和build；
 >II、然后在pom中增加：
->```xml
-><build>
+```xml
+<build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -61,15 +62,15 @@
       </plugin>
     </plugins>
   </build>
->```
+```
 >III、用于每次编译是不能知道编译的版本，maven-jar-plugin用于打test的jar包，Spring Framework中的test会应用另一个包中的test，所以需要单独打包；
 >IV、最后一步是一个一个的导入项目，然后编译报错，加maven包。。。
 - **方法比较笨拙，应该可以编写脚本减轻工作量**
 
 ### **⑥、注意点**
 >I、spring-context-indexer项目中会有一个主意点，如下：
->```xml
-><build>
+```xml
+<build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -87,7 +88,7 @@
       </plugin>
     </plugins>
   </build>
->```
+```
 >II、pom中导入的包没有经过精挑细选，需要自行确认；
 >III、测试代码最好写在spring-webmvc、spring-websocket中，以免其他项目又引入了某个项目而造成循环依赖。
 
