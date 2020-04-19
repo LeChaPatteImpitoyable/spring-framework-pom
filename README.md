@@ -1,13 +1,13 @@
-#Spring Framework Pom
+# Spring Framework Pom
 
 [Spring|Spring framework|Maven]
 >**注意：** `此代码仅用于学习目的，便于新手阅读Spring Framework源码使用`
 >
 
-##1、说明：
+## 1、说明：
 - **我只是对官方源码进行处理，并没有任何改动，使用的Spring Framework版本为5.1.X，当前为5.1.15，请知晓。**
 - **由于当前官方源码使用Gradle编译，对于新手极为不方便，而且困难，对于Groovy脚本语言没有一点基础则无法理解，我只是对源码进行转换，未做改动。**
-##2、转换过程
+## 2、转换过程
 ### **①下载源码**
 >https://github.com/spring-projects/spring-framework.git
 
