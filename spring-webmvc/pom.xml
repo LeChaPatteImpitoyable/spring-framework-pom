@@ -40,15 +40,15 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-cglib-repack</artifactId>
       <version>3.2.11</version>
-      <!--      <scope>system</scope>-->
-      <!--      <systemPath>${project.basedir}/lib/spring-cglib-repack-3.2.11.jar</systemPath>-->
+            <scope>system</scope>
+      <systemPath>D:/m2/repository/org/springframework/spring-cglib-repack/3.2.11/spring-cglib-repack-3.2.11.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-objenesis-repack</artifactId>
       <version>3.0.1</version>
-      <!--      <scope>system</scope>-->
-      <!--      <systemPath>${project.basedir}/lib/spring-objenesis-repack-3.0.1.jar</systemPath>-->
+            <scope>system</scope>
+      <systemPath>D:/m2/repository/org/springframework/spring-objenesis-repack/3.0.1/spring-objenesis-repack-3.0.1.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -111,21 +111,6 @@
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>5.1.15.BUILD-SNAPSHOT</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>5.1.15.BUILD-SNAPSHOT</version>
-      <type>test-jar</type>
-      <scope>compile</scope>
-    </dependency>
-
-
-    <dependency>
-      <groupId>org.springframework</groupId>
       <artifactId>spring-expression</artifactId>
       <version>5.1.15.BUILD-SNAPSHOT</version>
       <scope>compile</scope>
@@ -142,6 +127,20 @@
       <artifactId>spring-web</artifactId>
       <version>5.1.15.BUILD-SNAPSHOT</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>junit</artifactId>
+          <groupId>junit</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>kotlin-stdlib</artifactId>
+          <groupId>org.jetbrains.kotlin</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>kotlin-stdlib-common</artifactId>
+          <groupId>org.jetbrains.kotlin</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -149,6 +148,20 @@
       <version>5.1.15.BUILD-SNAPSHOT</version>
       <type>test-jar</type>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>junit</artifactId>
+          <groupId>junit</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>kotlin-stdlib</artifactId>
+          <groupId>org.jetbrains.kotlin</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>kotlin-stdlib-common</artifactId>
+          <groupId>org.jetbrains.kotlin</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>
@@ -177,6 +190,12 @@
       <artifactId>jackson-dataformat-xml</artifactId>
       <version>2.9.9</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>stax2-api</artifactId>
+          <groupId>org.codehaus.woodstox</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -238,6 +257,10 @@
           <artifactId>jcl-over-slf4j</artifactId>
           <groupId>org.slf4j</groupId>
         </exclusion>
+        <exclusion>
+          <artifactId>slf4j-api</artifactId>
+          <groupId>org.slf4j</groupId>
+        </exclusion>
       </exclusions>
       <optional>true</optional>
     </dependency>
@@ -249,6 +272,10 @@
       <exclusions>
         <exclusion>
           <artifactId>jcl-over-slf4j</artifactId>
+          <groupId>org.slf4j</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>slf4j-api</artifactId>
           <groupId>org.slf4j</groupId>
         </exclusion>
       </exclusions>
@@ -268,6 +295,22 @@
           <artifactId>jcl-over-slf4j</artifactId>
           <groupId>org.slf4j</groupId>
         </exclusion>
+        <exclusion>
+          <artifactId>slf4j-api</artifactId>
+          <groupId>org.slf4j</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>freemarker</artifactId>
+          <groupId>org.freemarker</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>guava</artifactId>
+          <groupId>com.google.guava</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>commons-collections</artifactId>
+          <groupId>commons-collections</groupId>
+        </exclusion>
       </exclusions>
       <optional>true</optional>
     </dependency>
@@ -281,6 +324,10 @@
           <artifactId>jcl-over-slf4j</artifactId>
           <groupId>org.slf4j</groupId>
         </exclusion>
+        <exclusion>
+          <artifactId>slf4j-api</artifactId>
+          <groupId>org.slf4j</groupId>
+        </exclusion>
       </exclusions>
       <optional>true</optional>
     </dependency>
@@ -292,6 +339,10 @@
       <exclusions>
         <exclusion>
           <artifactId>jcl-over-slf4j</artifactId>
+          <groupId>org.slf4j</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>slf4j-api</artifactId>
           <groupId>org.slf4j</groupId>
         </exclusion>
       </exclusions>
@@ -351,6 +402,20 @@
       <artifactId>webjars-locator-core</artifactId>
       <version>0.37</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>commons-compress</artifactId>
+          <groupId>org.apache.commons</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jackson-core</artifactId>
+          <groupId>com.fasterxml.jackson.core</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>slf4j-api</artifactId>
+          <groupId>org.slf4j</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -362,7 +427,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13</version>
       <scope>test</scope>
     </dependency>
       <dependency>
@@ -406,6 +471,12 @@
       <artifactId>reactor-core</artifactId>
       <version>3.3.0.RELEASE</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>reactive-streams</artifactId>
+          <groupId>org.reactivestreams</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>io.reactivex</groupId>
@@ -418,12 +489,24 @@
       <artifactId>rxjava</artifactId>
       <version>2.2.19</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>reactive-streams</artifactId>
+          <groupId>org.reactivestreams</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
       <version>9.2.28.v20190418</version>
       <scope>test</scope>
+        <exclusions>
+            <exclusion>
+                <artifactId>javax.servlet-api</artifactId>
+                <groupId>javax.servlet</groupId>
+            </exclusion>
+        </exclusions>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>

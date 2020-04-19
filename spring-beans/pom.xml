@@ -37,6 +37,12 @@
   <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
+      <artifactId>spring-jcl</artifactId>
+      <version>5.1.15.BUILD-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>5.1.15.BUILD-SNAPSHOT</version>
       <scope>compile</scope>

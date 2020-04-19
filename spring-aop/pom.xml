@@ -58,12 +58,6 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>5.1.15.BUILD-SNAPSHOT</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-core</artifactId>
-      <version>5.1.15.BUILD-SNAPSHOT</version>
       <type>test-jar</type>
       <scope>compile</scope>
     </dependency>
@@ -110,15 +104,15 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-cglib-repack</artifactId>
       <version>3.2.11</version>
-      <!--      <scope>system</scope>-->
-      <!--      <systemPath>${project.basedir}/lib/spring-cglib-repack-3.2.11.jar</systemPath>-->
+            <scope>system</scope>
+      <systemPath>D:/m2/repository/org/springframework/spring-cglib-repack/3.2.11/spring-cglib-repack-3.2.11.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-objenesis-repack</artifactId>
       <version>3.0.1</version>
-      <!--      <scope>system</scope>-->
-      <!--      <systemPath>${project.basedir}/lib/spring-objenesis-repack-3.0.1.jar</systemPath>-->
+            <scope>system</scope>
+      <systemPath>D:/m2/repository/org/springframework/spring-objenesis-repack/3.0.1/spring-objenesis-repack-3.0.1.jar</systemPath>
     </dependency>
   </dependencies>
 

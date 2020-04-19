@@ -227,6 +227,12 @@
       <artifactId>javax.inject-tck</artifactId>
       <version>1</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>junit</artifactId>
+          <groupId>junit</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -237,15 +243,15 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-cglib-repack</artifactId>
       <version>3.2.11</version>
-      <!--      <scope>system</scope>-->
-      <!--      <systemPath>${project.basedir}/lib/spring-cglib-repack-3.2.11.jar</systemPath>-->
+            <scope>system</scope>
+      <systemPath>D:/m2/repository/org/springframework/spring-cglib-repack/3.2.11/spring-cglib-repack-3.2.11.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-objenesis-repack</artifactId>
       <version>3.0.1</version>
-      <!--      <scope>system</scope>-->
-      <!--      <systemPath>${project.basedir}/lib/spring-objenesis-repack-3.0.1.jar</systemPath>-->
+            <scope>system</scope>
+      <systemPath>D:/m2/repository/org/springframework/spring-objenesis-repack/3.0.1/spring-objenesis-repack-3.0.1.jar</systemPath>
     </dependency>
   </dependencies>
 

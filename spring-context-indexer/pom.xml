@@ -54,6 +54,13 @@
   </issueManagement>
 <dependencies>
   <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.1.15.BUILD-SNAPSHOT</version>
+    <type>test-jar</type>
+    <scope>compile</scope>
+  </dependency>
+  <dependency>
     <groupId>javax.inject</groupId>
     <artifactId>javax.inject</artifactId>
     <version>1</version>
@@ -84,6 +91,18 @@
     <artifactId>spring-context</artifactId>
     <version>5.1.15.BUILD-SNAPSHOT</version>
     <scope>compile</scope>
+  </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13</version>
+        <scope>test</scope>
+    </dependency>
+  <dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest</artifactId>
+    <version>2.1</version>
+    <scope>test</scope>
   </dependency>
 </dependencies>
 
