@@ -100,6 +100,12 @@
       <artifactId>jackson-dataformat-xml</artifactId>
       <version>2.9.9</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>woodstox-core</artifactId>
+          <groupId>com.fasterxml.woodstox</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -120,6 +126,12 @@
       <artifactId>aalto-xml</artifactId>
       <version>1.1.1</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>stax2-api</artifactId>
+          <groupId>org.codehaus.woodstox</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -134,6 +146,12 @@
       <artifactId>protobuf-java-util</artifactId>
       <version>3.6.1</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>gson</artifactId>
+          <groupId>com.google.code.gson</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -155,6 +173,20 @@
       <artifactId>mockwebserver</artifactId>
       <version>4.5.0</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>junit</artifactId>
+          <groupId>junit</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>kotlin-stdlib</artifactId>
+          <groupId>org.jetbrains.kotlin</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>kotlin-stdlib-common</artifactId>
+          <groupId>org.jetbrains.kotlin</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>commons-fileupload</groupId>
@@ -175,6 +207,12 @@
       <artifactId>reactor-netty</artifactId>
       <version>0.8.18.BUILD-SNAPSHOT</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>reactive-streams</artifactId>
+          <groupId>org.reactivestreams</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -196,6 +234,16 @@
       <artifactId>rxjava-reactive-streams</artifactId>
       <version>1.2.1</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>reactive-streams</artifactId>
+          <groupId>org.reactivestreams</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>rxjava</artifactId>
+          <groupId>io.reactivex</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -278,6 +326,10 @@
           <artifactId>commons-logging</artifactId>
           <groupId>commons-logging</groupId>
         </exclusion>
+        <exclusion>
+          <artifactId>httpclient</artifactId>
+          <groupId>org.apache.httpcomponents</groupId>
+        </exclusion>
       </exclusions>
       <optional>true</optional>
     </dependency>
@@ -290,6 +342,10 @@
         <exclusion>
           <artifactId>commons-logging</artifactId>
           <groupId>commons-logging</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>httpcore</artifactId>
+          <groupId>org.apache.httpcomponents</groupId>
         </exclusion>
       </exclusions>
       <optional>true</optional>
@@ -313,6 +369,24 @@
       <artifactId>jetty-reactive-httpclient</artifactId>
       <version>1.0.3</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>jetty-http</artifactId>
+          <groupId>org.eclipse.jetty</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jetty-io</artifactId>
+          <groupId>org.eclipse.jetty</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>reactive-streams</artifactId>
+          <groupId>org.reactivestreams</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>slf4j-api</artifactId>
+          <groupId>org.slf4j</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -396,6 +470,12 @@
       <artifactId>nio-multipart-parser</artifactId>
       <version>1.1.0</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>slf4j-api</artifactId>
+          <groupId>org.slf4j</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
       <dependency>
@@ -433,12 +513,32 @@
       <artifactId>jackson-datatype-jsr310</artifactId>
       <version>2.10.0</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>jackson-annotations</artifactId>
+          <groupId>com.fasterxml.jackson.core</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jackson-core</artifactId>
+          <groupId>com.fasterxml.jackson.core</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jackson-databind</artifactId>
+          <groupId>com.fasterxml.jackson.core</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>io.projectreactor</groupId>
       <artifactId>reactor-test</artifactId>
       <version>3.2.5.RELEASE</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>reactor-core</artifactId>
+          <groupId>io.projectreactor</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.xmlunit</groupId>

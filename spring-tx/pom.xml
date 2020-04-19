@@ -85,6 +85,12 @@
       <artifactId>javax.ejb-api</artifactId>
       <version>3.2</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>javax.transaction-api</artifactId>
+          <groupId>javax.transaction</groupId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
     </dependency>
     <dependency>
